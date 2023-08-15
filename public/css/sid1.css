@@ -1,0 +1,126 @@
+#sidebarbutton{
+    width: 100%;
+    height: 100%;
+    background:#17153e;
+    color:#c8c5d3;
+    position:fixed;
+    height:100%;
+    overflow:hidden;
+    left:0;
+    margin:0;
+z-index: 101;
+display: none;
+}
+#sidebarbutton #sidebar{
+    min-width: 200px;
+}
+.navbar-header li{
+position: relative;
+    top :2%;
+    list-style-type: none;
+    display: inline;
+}
+@media screen and (max-width:760px ) {
+    .navbar-header ul{
+text-align: center;
+    }
+    .navbar-header ul a{
+        float: none;
+
+        font-size: 1rem;
+        height: auto;
+        position: relative;
+        display: block;
+
+    }
+
+}
+.navbar-header ul h3{
+    display: inline;
+color: #dbbe49;
+}
+
+
+.sidebar ul {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    /* display: inline; */
+    list-style-type: none;}
+
+.sidebar .navbar-header{
+    background-color: white;
+    color: yellow;
+    display: inline-block;
+
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 17%;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+min-width: 150px;
+    -moz-box-shadow:    -3px 0 5px 0 #555555;
+    -webkit-box-shadow: -3px 0 100px 0 #555;
+    box-shadow:         -3px 0 5px 0 rgba(0,0,0,.2);
+    z-index: 102}
+.sidebar #mainmenu{
+position: relative;
+    top: 2%;
+padding: 20px;
+    text-align: center;
+}
+/* Sidebar links */
+.sidebar a {
+    display: block;
+font-size: large;
+font-weight: bold;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 750px) {
+    .sidebar {
+min-width: 250px;
+        width: 20%;
+        height: auto;
+        position: fixed;
+    display: none;
+    }
+
+    .sidebar a {}
+    div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}

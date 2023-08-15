@@ -1,0 +1,22 @@
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #c6cccd;
+    z-index: 999;}
+footer{
+    top: 80%;
+}
+.spinner-border{
+position: absolute;
+    top: 45%;
+    right: 48%;
+}
+@media screen and (max-width: 400px){
+    .spinner-border{
+        position: absolute;
+        top: 40%;
+        right: 35%;
+    }
+
+}

@@ -1,0 +1,96 @@
+#header{
+    box-shadow: 0 10px 25px -2px rgba(0,0,0,.2);
+    position: fixed;
+    width: 79%;
+    background-color: white;
+    float: left;
+padding: 10px;
+margin-top: 1%;
+border-radius: 3px;
+right: 19%;
+    z-index: 100;
+
+}
+#dropdownbutton button{float: right}
+#dropdownbutton {
+    float :right;
+display: none;
+}
+@media screen and (max-width: 760px){
+    #dropdownbutton {
+
+        display: inline-block;
+    }
+
+
+    #header {
+        width: 100%;
+        right: 0;
+        margin: 0;
+        display: inline-block;
+    }
+    #header img {
+             display: inline-block;
+             }
+    #header p {
+    display: none;
+    }
+    }
+
+#username
+{
+    float: left ; margin-top: 0.5% ;padding: 2px ;font-size:large;
+}
+#header img{
+position: relative;
+   display: inline-block;
+    width: 40px;
+    height: 40px;
+float: left;
+justify-content: center;
+margin-left:5px ;
+}
+#header #lang {
+    position: relative;
+    display: inline-block;
+float: left;
+    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+
+}
+
+
+#header p{
+position: absolute;
+    display: inline-block;
+margin-top: 1%;
+    font-size: large;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px)
+{    #header img{
+    width: 30px;
+    height: 30px;
+margin-top: 3px;
+}
+    #header img{
+        width: 30px;
+        height: 30px;
+
+    }
+    #username{
+        font-size: small;
+ margin-top: 6px;
+    }
+    #header #lang {
+margin-top: 3px;
+width: 20px;
+        height: 30px;
+
+    }
+
+
+
+}

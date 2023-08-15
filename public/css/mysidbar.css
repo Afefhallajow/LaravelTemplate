@@ -1,0 +1,24 @@
+body{
+}
+
+#sidebar{
+position: fixed;
+    right: 0
+    ;float: right;
+    text-align: center;
+    padding: 10px;
+    top:0;
+    border:1px solid black;
+    width: 17%;
+    height: 100vh;
+    display: inline-block;
+    background-color: white;
+    z-index: 1;
+    color: #dbbe49;
+}
+@media screen and (max-width: 768px)
+{
+    #sidebar {
+width: 17%;
+    }
+}
